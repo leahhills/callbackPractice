@@ -24,7 +24,7 @@ and what you should write is the sayHi function that makes the code above work,
 
   // Code Here
 
-function first(name,cb){
+function first(names,cb){
   cb(names[0]);
 }
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -37,7 +37,10 @@ first(names, function(firstName){
 // 2. Write a function called last which returns the last item of the array using a callback function.
 
   //Code Here
-
+function last(names,cb2){
+var takingAway= names.pop();
+  cb2(takingAway);
+}
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
 });
